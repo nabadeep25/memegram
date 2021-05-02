@@ -77,7 +77,7 @@ return subscriber
          </>)
          :(<> 
          <Stack.Screen name="SignIn" component={SignIn}/>
-        <Stack.Screen name="Sigbup" component={SignUp}/>
+        <Stack.Screen name="SignUp" component={SignUp}/>
          </>)}
       </Stack.Navigator>
     </NavigationContainer>

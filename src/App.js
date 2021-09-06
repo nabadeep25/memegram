@@ -23,7 +23,7 @@ import database from '@react-native-firebase/database'
 import EmptyContainer from './components/EmptyContainer'
 
 import {requestPermission} from './Utils/AskPermission'
-import { State } from 'react-native-gesture-handler';
+
 
 const Stack=createStackNavigator();
 

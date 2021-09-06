@@ -23,11 +23,11 @@ const Post=({item,userDetails})=>{
         database().ref(`/posts/${item.item.id}/vote/${userDetails.uid}`).set({downvote:1})
     }
 useEffect(() => {
-  console.log("From Post",item.item)
-  if(item.vote){
+ // console.log("From Post",item.item)
+  if(item.item.vote){
       let upVote=0
-      let downvote=0
-      Object.values(item.vote).map((val)=>{
+      let downVote=0
+      Object.values(item.item.vote).map((val)=>{
           if(val.upvote){
               upVote+=1
           }
@@ -120,7 +120,7 @@ useEffect(() => {
             transparent
             iconLeft
             onPress={() => {
-              Linking.openURL(`instagram://user?username=${item.item.instaId}`);
+              Linking.openURL(`instagram://user?username=${item.item.insta}`);
             }}>
             <Text
               style={{

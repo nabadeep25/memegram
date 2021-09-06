@@ -44,7 +44,7 @@ const mapStateToProps=(state)=>({
 })
 const mapDispatchToProps={
     getPosts
-}
+  }
 Home.propTypes={
     getPosts:propTypes.func.isRequired,
     postState:propTypes.object.isRequired,
